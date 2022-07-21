@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: var(--main-fonts);
+  font-size: 14px;
+  line-height: 160%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  width: 100%;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

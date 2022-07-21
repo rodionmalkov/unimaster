@@ -1,0 +1,38 @@
+.header {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__top,
+  &__contacts-wrapper,
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__contacts {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+  &__contacts a {
+    color: var(--white);
+  }
+
+  &__contacts-wrapper {
+    padding: 10px 0;
+    justify-content: space-around;
+  }
+
+  &__btn {
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+    padding: 6px 16px;
+  }
+}

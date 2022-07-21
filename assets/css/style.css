@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: var(--main-fonts);
+  font-size: 14px;
+  line-height: 160%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content 1fr -webkit-min-content;
+  -ms-grid-rows: min-content 1fr min-content;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-rows: min-content 1fr min-content;
+  width: 100%;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+:root {
+  --simple-black: #000;
+  --black: #1e272e;
+  --white: #f5f6fa;
+  --blue: #0f2499;
+  --blue-accent: #041369;
+  --light-green: #d4ffba;
+  --main-fonts: "Montserrat", Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat-ExtraBold.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat-ExtraBold.ttf);
+  font-weight: 600;
+}
+.logo {
+  width: 100%;
+  max-width: 120px;
+  max-height: 120px;
+  overflow: hidden;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.header__top, .header__contacts-wrapper, .header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+.header__contacts {
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.header__contacts a {
+  color: var(--white);
+}
+.header__contacts-wrapper {
+  padding: 10px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.header__btn {
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: 4px;
+  padding: 6px 16px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.nav__item {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.page,
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.page {
+  gap: 20px;
+}
+
+.carousel__item {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.carousel__content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 60px;
+  color: var(--white);
+}
+.carousel__photo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.carousel__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.slogan {
+  max-width: 250px;
+  font-size: 16px;
+  font-style: italic;
+}
