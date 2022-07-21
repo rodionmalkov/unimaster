@@ -1,0 +1,27 @@
+// 1. SETTING
+
+@import "1. SETTING/global.scss";
+@import "1. SETTING/container.scss";
+@import "1. SETTING/varibles.scss";
+@import "1. SETTING/fonts.scss";
+@import "1. SETTING/logo.scss";
+@import "1. SETTING/copyright.scss";
+
+// 2. PAGE
+
+@import "2. PAGE/header.scss";
+@import "2. PAGE/footer.scss";
+@import "2. PAGE/nav.scss";
+
+// 3. COMPONENTS
+
+@import "3. COMPONENTS/carousel.scss";
+
+// 4. BUTTONS
+
+@import "4. BUTTONS/button.scss";
+@import "4. BUTTONS/social.scss";
+
+// 5. OTHER
+
+@import "5. OTHER/other.scss";
