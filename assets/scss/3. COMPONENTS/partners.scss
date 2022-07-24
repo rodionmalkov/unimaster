@@ -1,0 +1,28 @@
+.partners {
+  &__carousel {
+    overflow: hidden;
+  }
+  &__wrapper,
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    justify-content: center;
+  }
+
+  &__item img {
+    max-width: 250px;
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .partners {
+    &__item img {
+      max-width: 190px;
+      max-height: 100px;
+    }
+  }
+}

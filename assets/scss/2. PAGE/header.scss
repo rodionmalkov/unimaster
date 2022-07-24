@@ -6,7 +6,7 @@
   }
 
   &__top,
-  &__contacts-wrapper,
+  &__contacts,
   &__body {
     display: flex;
     align-items: center;
@@ -14,19 +14,20 @@
     gap: 40px;
   }
 
-  &__contacts {
+  &__top {
     width: 100%;
     background-color: var(--blue);
+  }
+
+  &__contacts {
+    width: 100%;
     color: var(--white);
+    padding: 10px 0;
+    justify-content: space-around;
   }
 
   &__contacts a {
     color: var(--white);
-  }
-
-  &__contacts-wrapper {
-    padding: 10px 0;
-    justify-content: space-around;
   }
 
   &__btn {
@@ -34,5 +35,19 @@
     border: 2px solid var(--blue);
     border-radius: 4px;
     padding: 6px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-top: 10px;
+    &__top {
+      display: none;
+    }
+
+    &__body {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }
