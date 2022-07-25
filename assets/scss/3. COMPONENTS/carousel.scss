@@ -2,7 +2,7 @@
   &__item {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 520px;
     overflow: hidden;
   }
 
@@ -26,5 +26,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 450px) {
+  .carousel {
+    &__item {
+      height: 300px;
+    }
+
+    &__content {
+      font-size: 40px;
+    }
   }
 }

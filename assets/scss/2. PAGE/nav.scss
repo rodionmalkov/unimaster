@@ -8,3 +8,11 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 450px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
