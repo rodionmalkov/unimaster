@@ -1,0 +1,157 @@
+.products {
+  &__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+
+  &__item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  &__item:first-child &__photo {
+    height: 550px;
+  }
+
+  &__item:first-child &__info {
+    gap: 40px;
+  }
+
+  &__item:first-child &__title {
+    font-size: 24px;
+  }
+
+  &__item:first-child &__price {
+    font-size: 28px;
+  }
+
+  &__item,
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 250px;
+  }
+
+  &__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: var(--blue-accent);
+    text-align: center;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: end;
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__btn:hover {
+    background-color: var(--blue-accent);
+  }
+}
+
+@media (max-width: 1200px) {
+  .products {
+    &__wrapper {
+      width: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    &__item:first-child {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+
+    &__item:first-child &__photo {
+      height: 250px;
+    }
+
+    &__item:first-child &__info {
+      gap: 10px;
+    }
+
+    &__item:first-child &__title {
+      font-size: 18px;
+    }
+
+    &__item:first-child &__price {
+      font-size: 20px;
+    }
+
+    &__item,
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    &__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__price {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .products {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__photo {
+      height: 190px;
+    }
+
+    &__item:first-child &__photo {
+      height: 190px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__price {
+      font-size: 16px;
+    }
+  }
+}
