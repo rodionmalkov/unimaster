@@ -1,10 +1,12 @@
 .page,
-.main {
+.main,
+.main section {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
+.main section,
 .page {
   gap: 20px;
 }
