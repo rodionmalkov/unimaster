@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--blue);
+
+  .nav__item {
+    color: var(--white);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
