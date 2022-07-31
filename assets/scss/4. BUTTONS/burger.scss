@@ -1,0 +1,14 @@
+.burger {
+  display: none;
+  align-self: center;
+  z-index: 200;
+}
+
+@media (max-width: 880px) {
+  .burger {
+    display: grid;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 100px;
+  }
+}

@@ -3,4 +3,10 @@
   max-width: 120px;
   max-height: 120px;
   overflow: hidden;
+
+  a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

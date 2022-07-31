@@ -1,4 +1,5 @@
-var swiper = new Swiper(".partners__carousel", {
+// Слайдер Партнёры
+const swiper = new Swiper(".partners__carousel", {
   slidesPerView: 5,
   autoplay: {
     delay: 1000,
@@ -30,4 +31,26 @@ var swiper = new Swiper(".partners__carousel", {
       slideToClickedSlide: true,
     },
   },
+});
+
+// Всплывающие окна
+
+const btnReCall = document.querySelector(".header__btn");
+const popOverlap = document.querySelector(".popup-overlap");
+const reCallForm = document.querySelector(".popup-recall");
+const closeBtn = document.querySelector(".close-btn");
+
+btnReCall.addEventListener("click", () => {
+  reCallForm.classList.add("show-fc");
+  popOverlap.classList.add("show");
+});
+
+closeBtn.addEventListener("click", () => {
+  reCallForm.classList.remove("show-fc");
+  popOverlap.classList.remove("show");
+});
+
+popOverlap.addEventListener("click", () => {
+  reCallForm.classList.remove("show-fc");
+  popOverlap.classList.remove("show");
 });

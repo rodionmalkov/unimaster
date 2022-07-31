@@ -2,7 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+.page {
+  position: relative;
   margin: 0;
   font-family: var(--main-fonts);
   font-size: 14px;

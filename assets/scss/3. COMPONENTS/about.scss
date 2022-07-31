@@ -26,15 +26,20 @@
     margin-right: 10px;
   }
 
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   &__aside .logo {
     width: 100%;
     max-width: 260px;
     max-height: 260px;
   }
 
-  &__aside .logo svg {
-    width: 260px;
-    height: 260px;
+  &__aside .logo a img {
+    width: 100%;
     object-fit: cover;
   }
 
